@@ -1,0 +1,4 @@
+jmeter -n -t <test JMX file> -l <test log file> -e -o <Path to output folder>                                        
+
+
+jmeter -n -t C:\Users\DJ\Documents\GitHub\concurrency-code-challenge-vertx\jmeter\test-plan-vertx.jmx -l C:\Users\DJ\Documents\GitHub\concurrency-code-challenge-vertx\jmeter\result.log -e -o C:\Users\DJ\Documents\GitHub\concurrency-code-challenge-vertx\jmeter\test-reports
