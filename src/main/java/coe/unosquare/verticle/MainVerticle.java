@@ -47,7 +47,7 @@ public class MainVerticle extends AbstractVerticle {
 
             orderService.processOrder(order).onSuccess(result -> {
                 context.response()
-                        .setStatusCode(201)
+                        .setStatusCode(200)
                         .putHeader("content-type", "application/json")
                         .end(new ApiResponse(true, "Order processed successfully", result).convertToJson());
             }).onFailure(error -> {
